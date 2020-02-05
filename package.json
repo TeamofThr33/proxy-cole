@@ -1,0 +1,25 @@
+{
+  "name": "proxy-cole",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./server/server.js",
+  "scripts": {
+    "start": "nodemon -w ./server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TeamofThr33/proxy-cole.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TeamofThr33/proxy-cole/issues"
+  },
+  "homepage": "https://github.com/TeamofThr33/proxy-cole#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1"
+  }
+}
