@@ -1,9 +1,0 @@
-[submodule "Popular-Dishes"]
-	path = Popular-Dishes
-	url = https://github.com/TeamofThr33/Popular-Dishes.git
-[submodule "photo-gallery-modal"]
-	path = photo-gallery-modal
-	url = https://github.com/TeamofThr33/photo-gallery-modal.git
-[submodule "yelp-reservations-calendar"]
-	path = yelp-reservations-calendar
-	url = https://github.com/TeamofThr33/yelp-reservations-calendar.git

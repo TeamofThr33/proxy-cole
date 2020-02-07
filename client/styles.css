@@ -1,0 +1,42 @@
+.main-container{
+    width: 1430px;
+    height: 3000px;
+    display: flex;
+    flex-direction: row;
+    border: solid 1px blue
+}
+
+.yelp-header{
+    width: 1435px;
+    height: 119px;
+
+}
+
+.COLESCOMPONENT {
+ width: 1430px;
+ height: 370px;
+ position: absolute; 
+ border: solid 1px rgb(210, 180, 11)
+}
+
+.REMISCOMPONENT {
+    width: 940px;
+    height: 730px;
+    border: solid 1px red;
+    margin-top: 383px;
+}
+
+.ZACKSCOMPONENT {
+    width: 450px;
+    height: 730px;
+    border: solid 1px green;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 383px;
+    margin-left: 30px;
+}
+          
+

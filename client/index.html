@@ -2,42 +2,30 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="styles.css">
     <title>My test page</title>
   </head>
+  <header>
+    <img  class="yelp-header" src="yelpheader.png"/>
+  </header>
   <body>
-    <div style="width: auto;
-        height: 1000px;
-        display: flex;
-        flex-direction: row;
-        border: solid 1px blue">
-        <div class="COLESCOMPONENT">
-
+    <div class="main-container">
+        <div class="COLESCOMPONENT" id='app'>
         </div>
-        <div class="REMISCOMPONENT" style="width: 940px;
-            height: 730px;
-            border: solid 1px red;">
+        
+        <div id="app-root"></div>
+        <div class ="REMISCOMPONENT" id="app3">
+          
         </div>
-        <div class="ZACKSCOMPONENT" style="width: 360px;
-            height: 730px;
-            border: solid 1px green;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;">
-            <div class="image-square"></div>
-            <div class="image-square"></div>
-            <div class="image-rectangle"></div>
-            <div class="image-square"></div>
-            <div class="image-square"></div>
-            <div class="image-rectangle"></div>
+        <div class="ZACKSCOMPONENT" id="app2">
 
         </div>
 
     </div>
-    <script src="/cole/bundle.js"></script>
-    <script src="/zack/bundles.js"></script>
-    <script src="/remi/bundles.js"></script>
+    <script src="http://localhost:3001/bundle.js"></script>
+    <script src="http://localhost:3003/bundle.js"></script>
+    <script src="http://localhost:3002/bundle.js"></script>
+    <script src="https://kit.fontawesome.com/cdd83c66cf.js" crossorigin="anonymous"></script>
+    
   </body>
 </html>
