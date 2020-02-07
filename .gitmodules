@@ -1,0 +1,9 @@
+[submodule "Coles"]
+	path = photo-gallery-modal
+	url = https://github.com/ColeHuntley83/photo-gallery-modal.git
+[submodule "Remi"]
+	path = Popular-Dishes
+	url = https://github.com/ColeHuntley83/Popular-Dishes.git
+[submodule "Zack"]
+	path = yelp-reservations-calendar
+	url = https://github.com/ColeHuntley83/yelp-reservations-calendar.git
