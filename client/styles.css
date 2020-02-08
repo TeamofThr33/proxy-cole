@@ -12,6 +12,10 @@
 
 }
 
+.coles-container {
+    z-index: 2000;
+}
+
 .COLESCOMPONENT {
  width: 1430px;
  height: 370px;
