@@ -22,6 +22,16 @@ app.get("/reservations/bundle.js", (req, res)=> {
 
 });
 
+app.get('/reservations', (req, res) => {
+        axios.get('http://localhost:3002/reservations')
+          .then((response) => {
+            res.status(200).send(response.data);
+          })
+          .catch((err) => {
+            res.status(500).end;
+          })
+      })
+
 app.get("/restaraunts/bundle.js", (req, res)=> {
         axios.get('http://localhost:3001/bundle.js')
         .then((response)=> {
@@ -57,6 +67,15 @@ app.get("/images/bundle.js", (req, res)=> {
 
 
 });
+app.get('/images', (req, res) => {
+        axios.get('http://localhost:3004/images')
+          .then((response) => {
+            res.status(200).send(response.data);
+          })
+          .catch((err) => {
+            res.status(500).end;
+          })
+      })
 
 
 /*app.get(/icons/, function(req, res) {
