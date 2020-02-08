@@ -59,9 +59,9 @@ app.get('/restaurants', (req, res) => {
           })
       });
 
-      app.get(/icons/, function(req, res) {
-        res.redirect('http://localhost:3001'+req.url);
-    });
+//       app.get(/icons/, function(req, res) {
+//         res.redirect('http://localhost:3001'+req.url);
+//     });
     
 
 
@@ -95,7 +95,16 @@ app.get('/images', (req, res) => {
 // 		res.setHeader('content-type', 'text/plain')
 // 		res.send(JSON.stringify(response.data));
 // })})
-
+app.get(/icons/, function(req, res) {
+        axios.get("http://localhost:3001"+req.url)
+            .then((response) => {
+                res.setHeader("content-type", "image/svg+xml")
+                res.end(response.data)
+            })
+            .catch((err) => {
+                res.end(err);
+            })
+    })
 
 
 
