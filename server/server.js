@@ -35,6 +35,17 @@ app.get("/restaraunts/bundle.js", (req, res)=> {
 });
 
 
+app.get('/restaurants', (req, res) => {
+        axios.get('http://localhost:3001/restaurants')
+          .then((response) => {
+            res.status(200).send(response.data);
+          })
+          .catch((err) => {
+            res.status(500).end;
+          })
+      })
+
+
 app.get("/images/bundle.js", (req, res)=> {
         axios.get('http://localhost:3004/bundle.js')
         .then((response)=> {
