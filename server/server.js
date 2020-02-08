@@ -10,6 +10,8 @@ app.use(express.static(__dirname + '/../client'));
 app.use(express.json());
 
 
+//zacks component
+
 app.get("/reservations/bundle.js", (req, res)=> {
 	axios.get('http://localhost:3002/bundle.js')
 	.then((response)=> {
@@ -32,6 +34,8 @@ app.get('/reservations', (req, res) => {
           })
       })
 
+
+      //remis component
 app.get("/restaraunts/bundle.js", (req, res)=> {
         axios.get('http://localhost:3001/bundle.js')
         .then((response)=> {
@@ -53,8 +57,15 @@ app.get('/restaurants', (req, res) => {
           .catch((err) => {
             res.status(500).end;
           })
-      })
+      });
 
+      app.get(/icons/, function(req, res) {
+        res.redirect('http://localhost:3001'+req.url);
+    });
+    
+
+
+//coles component
 
 app.get("/images/bundle.js", (req, res)=> {
         axios.get('http://localhost:3004/bundle.js')
@@ -86,9 +97,6 @@ app.get('/images', (req, res) => {
 })})*/;
 
 
-app.get(/icons/, function(req, res) {
-    res.redirect("http://localhost:3001"+req.url);
-})
 
 
 
