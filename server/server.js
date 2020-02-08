@@ -60,7 +60,7 @@ app.get('/restaurants', (req, res) => {
       });
 
       app.get(/icons/, function(req, res) {
-        res.redirect('http://localhost:3001'+req.url);
+        res.redirect('localhost:3001'+req.url);
     });
     
 
