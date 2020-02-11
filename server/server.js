@@ -1,10 +1,12 @@
 const axios = require('axios');
 const express = require('express');
 const morgan = require('morgan');
+const compression = require('compression');
 
 const port = 3000;
 let app = express();
 app.use(morgan('dev'));
+app.use(compression());
 
 app.use(express.static(__dirname + '/../client'));
 app.use(express.json());
