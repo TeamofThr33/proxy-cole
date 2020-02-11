@@ -145,7 +145,7 @@ checkCache = (req, res, next) => {
           res.status(500).send(err);
       }
       //if no match found
-      if (data != null) {
+      if (data !== null) {
           console.log("using image cached data!!!!!!!!")
           res.send(data);
       } 
