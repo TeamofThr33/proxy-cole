@@ -21,7 +21,7 @@
     "axios": "^0.19.2",
     "express": "^4.17.1",
     "morgan": "^1.9.1",
-    "redis": "^3.0.2",
+    "redis": "^3.1.1",
     "response-time": "^2.3.2"
   },
   "devDependencies": {
