@@ -19,7 +19,7 @@
   "homepage": "https://github.com/TeamofThr33/proxy-cole#readme",
   "dependencies": {
     "axios": "^0.19.2",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "morgan": "^1.9.1",
     "redis": "^3.0.2",
     "response-time": "^2.3.2"
